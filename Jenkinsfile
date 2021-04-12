@@ -1,8 +1,11 @@
 pipeline {
+    agent any
 
-    agent {
-        node {
-            label 'master'
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
         }
     }
 }
